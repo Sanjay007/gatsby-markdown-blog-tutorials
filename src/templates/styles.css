@@ -1,0 +1,234 @@
+h1{
+   color:#efbb35; 
+ font-size: 3.5rem;
+   font-weight: 300;
+   font-family: 'Recursive, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, 'Open Sans', FreeSans, sans-serif';
+   font-variation-settings: "CASL" 0, "slnt" -5;
+}
+
+.mainWrapper{
+    display: grid;
+    grid-template-columns: minmax(250px, 3fr) 1fr;
+    grid-gap: 1rem;
+}
+.article-content ul {
+    
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+  }
+  
+  .article-content ul li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    color: white;
+    margin-left: .5em;
+    list-style-type: none!important;
+  }
+  
+  .article-content ul li:before {
+    font-family: FontAwesome;
+    content: "🏷️ ";
+    position: absolute;
+    left : 1em;
+    margin: 1px;
+    color: white;
+  }
+.article-content p{
+    color:#DDD;
+    font-size:1.2rem;
+    font-weight: 300;
+}
+
+.article-content strong{
+    font-weight: 600;
+    color:#FAD7A0;
+}
+.article-content h2{
+    color:#efbb35; 
+display: flex;
+    font-weight: 300;
+    transition: 'font-variation-settings .25s ease-out';
+    font-family: 'Recursive, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, 'Open Sans', FreeSans, sans-serif';
+    font-variation-settings: '"slnt" -10, "CASL" 0';
+}
+.article-content table {
+    
+    padding: 5px;
+    width: 100%;
+    margin:1rem;
+    margin-bottom: 1rem;
+    color: #efbb35;
+}
+.article-content table th,td {
+    
+   color: #FAD7A0;
+    border-bottom: 1px solid #b8b2a5;
+
+}
+.article-content a{
+    color: #FAD7A0;
+    font: "transition: font 0.3s ease";
+}
+
+.article-content blockquote{
+    background: #073642;
+    position: relative;
+    padding-left: .3em;
+    border-left: .3rem solid #FAD7A0;
+    
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: 100;
+    color: #FAD7A0;
+  
+  
+}
+
+.article-content blockquote p:before, .article-content blockquote p:after {
+    content: '\201C';
+    font-size: 2.2rem;
+    font-family: 'Sanchez';
+    color: lighten(rgb(96, 194, 101), 40%);
+ }
+ 
+
+.article-content h2::after{
+    content: " ";
+    
+    background: linear-gradient(to right,#d2d447,#3b3a38);
+    height: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    margin: .8em 2px 0 3px;
+    flex-grow: 1;
+    border-radius: 2px;
+
+}
+.text-center{
+    text-align: center;
+}
+
+
+.gatsby-highlight {
+   
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    
+    overflow: auto;
+  }
+  .gatsby-highlight::before{
+     
+      content: ' 💻 ';
+    
+    font-size: 1.5rem;
+   
+    justify-content: center;
+    right: -.9rem;
+    
+   
+
+  }
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+
+  
+  .article-aside .rightBox::before{
+    content: '🏆';
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    right: -.9rem;
+    background: #073642;
+    border-radius: 50%;
+    align-items: center;
+    top: -.8rem;
+  }
+
+
+  .article-aside .rightBox.emoji-pick::before {
+    content: '💪';
+}
+
+  .article-aside .rightBox{
+    border-radius: 3px;
+    background: #073642;
+    overflow: visible;
+    padding: 2rem;
+    border-radius: 15px 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+.rightBox h3{
+    letter-spacing: -1px;
+    font-size: 1.3rem;
+    color: #efbb35;
+}
+
+.rightBox h4>a{
+  text-decoration: underline;
+    color: #2aa198;
+}
+
+
+
+
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+
